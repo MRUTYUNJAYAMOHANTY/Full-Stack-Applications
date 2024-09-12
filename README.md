@@ -1,4 +1,7 @@
 # Full-Stack-Applications 
+
+# PROJECT NAME : EMPLOYEE MANAGEMENT USING JAVA SPRING BOOT AND ANGULAR 
+
    > spring boot 3.3.3 
    > Angular v18
    > MySql WorkBench 8.0.38  
