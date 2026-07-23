@@ -21,7 +21,7 @@ import com.java.angular.model.Employee;
 import com.java.angular.repository.EmployeeRepository;
 
 // REST API's got created here
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(originPatterns = "http://localhost:*")
 @RestController
 @RequestMapping("/api/v1/") // standard version declaration for api's
 public class EmployeeController {

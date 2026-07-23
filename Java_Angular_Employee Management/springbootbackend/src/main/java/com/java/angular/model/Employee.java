@@ -8,6 +8,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
 
 //Annotations to map Employee model to relational database table 
@@ -20,8 +21,9 @@ public class Employee {
 	
 //	primary key for table
 	@Id
-//	primary key generation strategy
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+//	Oracle XE compatible sequence-based primary key generation
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "employee_seq")
+	@SequenceGenerator(name = "employee_seq", sequenceName = "employee_seq", allocationSize = 1)
 	private long id;
 //	to provide column name to field
 //	we can map a column name to the field and also we can give a column name here
