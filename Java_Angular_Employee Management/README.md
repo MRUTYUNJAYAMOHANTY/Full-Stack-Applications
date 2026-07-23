@@ -4,8 +4,8 @@
 
    > spring boot 3.3.3 
    > Angular v18
-   > MySql WorkBench 8.0.38  
-   
+   > Oracle XE 21c
+   > Java 17
 dependencies : 
 
 1. spring web - use to build restful web services. build web using RESTful app using spring mvc uses 
